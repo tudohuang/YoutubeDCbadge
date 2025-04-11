@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <title><%= title %> - <%= artist %></title>
+
+  <!-- Social Embed Meta -->
+  <meta property="og:title" content="<%= title %> - <%= artist %>">
+  <meta property="og:description" content="正在 YouTube Music 上播放">
+  <meta property="og:image" content="<%= cardImage %>">
+  <meta property="og:url" content="<%= ytmUrl %>">
+  <meta property="og:type" content="music.song">
+</head>
+<body style="background:#1e1e1e;color:#fff;font-family:sans-serif;padding:30px">
+  <h2>🎧 <%= title %></h2>
+  <p>演出者：<%= artist %></p>
+  <img src="<%= cardImage %>" width="480" />
+  <p>
+    <a href="<%= ytmUrl %>" target="_blank" style="color:#66ccff">▶ 在 YouTube Music 上播放</a><br>
+    <a href="<%= ytUrl %>" target="_blank" style="color:#999">🔗 YouTube 原始影片</a>
+  </p>
+</body>
+</html>
